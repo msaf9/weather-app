@@ -1,4 +1,8 @@
 <div class="alignment">
-    <input type="text" placeholder="City">
+    <input [(ngModel)]="city" type="text" placeholder="City">
     <button type="submit">Search</button>
+</div>
+
+<div class="alignment">
+    <h1>{{city}}</h1>
 </div>
