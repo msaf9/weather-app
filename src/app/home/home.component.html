@@ -1,8 +1,26 @@
-<div class="alignment">
+<div class="container">
+    <div class="upper-level">
+        <img src="../../assets/hot.png" alt="Hot Weather" *ngIf="14 > 15">
+        <img src="../../assets/cold.jpg" alt="Cold Weather" *ngIf="14 < 15">
+
+        <div class="weather">
+            <div class="location">
+                Hyderabad
+            </div>
+            <div class="temperature">
+                {{ 14.40 | number: '1.0-0'}}°C
+            </div>
+        </div>
+    </div>
+    <div class="lower-level">
+
+    </div>
+</div>
+<!-- <div class="alignment">
     <input [(ngModel)]="city" type="text" placeholder="City">
     <button type="submit">Search</button>
 </div>
 
 <div class="alignment">
     <h1>{{city}}</h1>
-</div>
+</div> -->
