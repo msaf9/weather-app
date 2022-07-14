@@ -36,4 +36,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  clear(): void {
+    this.cityName = '';
+  }
 }
