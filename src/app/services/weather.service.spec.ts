@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { WeatherService } from './weather.service';
 
-fdescribe('WeatherService', () => {
+describe('WeatherService', () => {
   let service: WeatherService;
 
   beforeEach(() => {
