@@ -1,20 +1,29 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import { WeatherService } from '../services/weather.service';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { HomeComponent } from './home.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { FormsModule } from '@angular/forms';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
+  let weatherServiceCall: WeatherService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        HttpClientTestingModule
+        HttpClientTestingModule,
+        RouterTestingModule,
+        FormsModule
       ],
       providers: [
         WeatherService
+      ],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
       ],
       declarations: [HomeComponent]
     })
@@ -27,7 +36,35 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
+  beforeEach(inject(
+    [WeatherService],
+    (weatherService: WeatherService) => {
+      weatherServiceCall = weatherService;
+    }
+  ));
+
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('test clear', () => {
+    component.cityName = 'Sydney';
+    component.clear();
+    expect(component.cityName).toEqual('');
+  });
+
+  it('test onSubmit', () => {
+    component.cityName = 'Sydney';
+    spyOn(component, 'getWeatherData').and.callThrough();
+    component.onSubmit();
+    expect(component.getWeatherData).toHaveBeenCalled();
+    expect(component.cityName).toEqual('');
+  });
+
+  it('test getWeatherData', () => {
+    component.cityName = 'Sydney';
+    spyOn(weatherServiceCall, 'getWeatherData').and.callThrough();
+    component.getWeatherData(component.cityName);
+    expect(weatherServiceCall.getWeatherData).toHaveBeenCalled();
   });
 });
