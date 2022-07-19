@@ -26,12 +26,11 @@ export class HomeComponent implements OnInit {
     this.cityName = '';
   }
 
-  private getWeatherData(cityName: string): void {
+  getWeatherData(cityName: string): void {
     this.weatherService.getWeatherData(cityName)
       .subscribe({
         next: (response) => {
           this.weatherData = response;
-          console.log(response);
         }
       });
   }
