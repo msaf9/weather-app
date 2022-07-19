@@ -1,5 +1,5 @@
 <div class="search">
-    <form #form="ngForm" (submit)="onSubmit()">
+    <form #myForm="ngForm" (submit)="onSubmit()">
         <input type="text" placeholder="Search City" name="city" [(ngModel)]="cityName" (click)="clear()">
     </form>
 </div>
