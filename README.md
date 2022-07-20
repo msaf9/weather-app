@@ -8,11 +8,13 @@ Weather App using Angular.
     - [Build](#build)
     - [Running unit tests](#running-unit-tests)
     - [Running end-to-end tests](#running-end-to-end-tests)
+    - [Deployment](#deployment)
     - [Further help](#further-help)
   - [Technologies](#technologies)
   - [Project Status](#project-status)
   - [Installation](#installation)
     - [Get repository](#get-repository)
+    - [URL](#url)
   - [License](#license)
 
 ## Introduction
@@ -33,14 +35,18 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ### Running end-to-end tests
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+### Deployment
+Deployed application using Firebase with `firebase deploy` command.
+
 ### Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Technologies
 - Angular
+- Firebase
 
 ## Project Status
-> **Completed**
+> **In Progress**
 
 ## Installation
 ### Get repository
@@ -48,5 +54,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 git https://github.com/msaf9/weatherApp.git
 cd weatherApp
 ```
+
+### URL
+- Access using this [URL](https://weatherapplicationui.firebaseapp.com/). 
 
 ## License
