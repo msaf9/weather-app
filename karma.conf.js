@@ -27,7 +27,7 @@ module.exports = function (config) {
     coverageReporter: {
       dir: require("path").join(__dirname, "./coverage/weather"),
       subdir: ".",
-      reporters: [{ type: "json" }, { type: "text-final" }],
+      reporters: [{ type: "html" }, { type: "text-summary" }],
     },
     reporters: ["progress", "kjhtml"],
     port: 9876,
