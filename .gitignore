@@ -44,3 +44,6 @@ Thumbs.db
 # Angular
 /src/environments
 /documentation
+
+# Firebase
+/.firebase
