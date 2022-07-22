@@ -47,16 +47,16 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('test clear', () => {
+  it('test clearSearch', () => {
     component.cityName = 'Sydney';
-    component.clear();
+    component.clearSearch();
     expect(component.cityName).toEqual('');
   });
 
-  it('test onSubmit', () => {
+  it('test onSearchSubmit', () => {
     component.cityName = 'Sydney';
     spyOn(component, 'getWeatherData').and.callThrough();
-    component.onSubmit();
+    component.onSearchSubmit();
     expect(component.getWeatherData).toHaveBeenCalled();
     expect(component.cityName).toEqual('');
   });

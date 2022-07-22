@@ -9,19 +9,16 @@ import { WeatherService } from '../services/weather.service';
 })
 export class HomeComponent implements OnInit {
 
-  city: string = '';
   cityName: string = 'Sydney';
-  constructor(private weatherService: WeatherService) {
-
-  }
-
   weatherData?: WeatherData;
+
+  constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
     this.getWeatherData(this.cityName);
   }
 
-  onSubmit(): void {
+  onSearchSubmit(): void {
     this.getWeatherData(this.cityName);
     this.cityName = '';
   }
@@ -35,7 +32,7 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  clear(): void {
+  clearSearch(): void {
     this.cityName = '';
   }
 }
