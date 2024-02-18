@@ -51,8 +51,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Installation
 ### Get repository
 ```git
-git https://github.com/msaf9/weatherApp.git
-cd weatherApp
+git https://github.com/msaf9/weather-app.git
+cd weather-app
 ```
 
 ### URL
