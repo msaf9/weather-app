@@ -1,20 +1,20 @@
 <h1>Weather</h1> 
 Weather App using Angular.
 
-  - [Introduction](#introduction)
-    - [Development server](#development-server)
-    - [Code scaffolding](#code-scaffolding)
-    - [Build](#build)
-    - [Running unit tests](#running-unit-tests)
-    - [Running end-to-end tests](#running-end-to-end-tests)
-    - [Deployment](#deployment)
-    - [Further help](#further-help)
-  - [Technologies](#technologies)
-  - [Project Status](#project-status)
-  - [Installation](#installation)
-    - [Get repository](#get-repository)
-    - [URL](#url)
-  - [License](#license)
+- [Introduction](#introduction)
+  - [Development server](#development-server)
+  - [Code scaffolding](#code-scaffolding)
+  - [Build](#build)
+  - [Running unit tests](#running-unit-tests)
+  - [Running end-to-end tests](#running-end-to-end-tests)
+  - [Deployment](#deployment)
+  - [Further help](#further-help)
+- [Technologies](#technologies)
+- [Project Status](#project-status)
+- [Installation](#installation)
+  - [Get repository](#get-repository)
+  - [URL](#url)
+- [License](#license)
 
 ## Introduction
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
