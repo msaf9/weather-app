@@ -1,6 +1,8 @@
 <h1>Weather</h1> 
 Weather App using Angular.
 
+<h2>Table of contents</h2>
+
 - [Introduction](#introduction)
   - [Development server](#development-server)
   - [Code scaffolding](#code-scaffolding)
