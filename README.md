@@ -60,3 +60,4 @@ cd weather-app
 - Access using this [URL](https://weatherapplicationui.firebaseapp.com/). 
 
 ## License
+[MIT License](LICENSE)
